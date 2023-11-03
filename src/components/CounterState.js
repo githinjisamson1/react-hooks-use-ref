@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 
 function CounterState() {
+  // !state
   const [count, setCount] = useState(0);
 
+  // !eventHandler
   function handleClick() {
+    // !update state based on previos state
     setCount((count) => count + 1);
   }
 
